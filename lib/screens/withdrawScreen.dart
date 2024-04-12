@@ -5,14 +5,13 @@ import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:spennd/controllerandmodels/TransactionController.dart';
 import 'package:spennd/home.dart';
-import 'package:spennd/screens/HomeScreen.dart';
 
 class WithdrawScreen extends StatelessWidget {
   WithdrawScreen({super.key});
-  TransactionController controller = Get.find();
-  TextEditingController Amount = TextEditingController();
-  TextEditingController PaidBy = TextEditingController();
-  TextEditingController Note = TextEditingController();
+ final TransactionController controller = Get.find();
+ final TextEditingController Amount = TextEditingController();
+ final TextEditingController PaidBy = TextEditingController();
+ final TextEditingController Note = TextEditingController();
 
   @override
   Widget build(BuildContext context) {

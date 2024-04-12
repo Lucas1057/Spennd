@@ -5,15 +5,14 @@ import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:spennd/controllerandmodels/TransactionController.dart';
 import 'package:spennd/home.dart';
-import 'package:spennd/screens/HomeScreen.dart';
 
 class IncomeScreen extends StatelessWidget {
   IncomeScreen({super.key});
-  TransactionController controller = Get.find();
-  TextEditingController Amount = TextEditingController();
-  TextEditingController PaidBy = TextEditingController();
-  TextEditingController Note = TextEditingController();
-  String Date =
+ final TransactionController controller = Get.find();
+ final TextEditingController Amount = TextEditingController();
+ final TextEditingController PaidBy = TextEditingController();
+ final TextEditingController Note = TextEditingController();
+ final String Date =
       '${DateTime.now().day.toString()}/${DateTime.now().month.toString()}/${DateTime.now().year.toString()}';
 
   @override

@@ -1,11 +1,8 @@
-import 'dart:math';
 
 import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/get_navigation.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:lottie/lottie.dart';
 import 'package:spennd/controllerandmodels/TransactionController.dart';
@@ -18,7 +15,7 @@ void main() async {
 
 class MyApp extends StatefulWidget {
   MyApp({super.key});
-  TransactionController controller = Get.put(TransactionController());
+  final TransactionController controller = Get.put(TransactionController());
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -93,8 +90,8 @@ class Splash extends StatelessWidget {
 
 class OnBoarding extends StatelessWidget {
   OnBoarding({super.key});
-  TextEditingController userNameController = TextEditingController();
-  TransactionController controller = Get.find();
+ final TextEditingController userNameController = TextEditingController();
+ final TransactionController controller = Get.find();
 
   @override
   Widget build(BuildContext context) {
