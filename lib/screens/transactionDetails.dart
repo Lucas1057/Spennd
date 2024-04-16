@@ -17,7 +17,7 @@ class Details extends StatelessWidget {
     required this.ind,
   }) : super(key: key);
 
-  final TransactionController controller = Get.put(TransactionController());
+  TransactionController controller = Get.put(TransactionController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(

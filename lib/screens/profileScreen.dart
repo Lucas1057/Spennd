@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:spennd/controllerandmodels/TransactionController.dart';
+import 'package:spennd/main.dart';
 
 class ProfileScreen extends StatelessWidget {
   ProfileScreen({super.key});
- final TransactionController controller = Get.find();
+  TransactionController controller = Get.find();
 
   @override
   Widget build(BuildContext context) {
